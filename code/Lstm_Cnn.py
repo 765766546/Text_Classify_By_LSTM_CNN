@@ -74,7 +74,6 @@ class Lstm_CNN(object):
             gradients, _ = tf.clip_by_global_norm(gradients, pm.clip)
             # 对g进行l2正则化计算，比较其与clip的值，如果l2后的值更大，让梯度*(clip/l2_g),得到新梯度
             self.optimizer = optimizer.apply_gradients(zip(gradients, variables), global_step=self.global_step)
-            # global_step 自动+1
 
         with tf.name_scope('accuracy'):
             correct = tf.equal(self.predict, tf.argmax(self.input_y, 1))
