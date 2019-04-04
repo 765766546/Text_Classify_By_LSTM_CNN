@@ -15,7 +15,7 @@ def val():
     label = []
     session = tf.Session()
     session.run(tf.global_variables_initializer())
-    save_path = tf.train.latest_checkpoint('./checkpoints/Lstm_CNN')
+    save_path = tf.train.latest_checkpoint('../checkpoints/Lstm_CNN')
     saver = tf.train.Saver()
     saver.restore(sess=session, save_path=save_path)
 
