@@ -19,9 +19,9 @@ class Parameters(object):
     num_epochs = 3          #epochs
     batch_size = 64         #batch_size
 
-    train_filename = './data/cnews.train.txt'  #train data
-    test_filename = './data/cnews.test.txt'    #test data
-    val_filename = './data/cnews.val.txt'      #validation data
-    vocab_filename = './data/vocab_word.txt'        #vocabulary
-    vector_word_filename = './data/vector_word.txt'  #vector_word trained by word2vec
-    vector_word_npz = './data/vector_word.npz'   # save vector_word to numpy file
+    train_filename = '../data/cnews.train.txt'  #train data
+    test_filename = '../data/cnews.test.txt'    #test data
+    val_filename = '../data/cnews.val.txt'      #validation data
+    vocab_filename = '../data/vocab_word.txt'        #vocabulary
+    vector_word_filename = '../data/vector_word.txt'  #vector_word trained by word2vec
+    vector_word_npz = '../data/vector_word.npz'   # save vector_word to numpy file
