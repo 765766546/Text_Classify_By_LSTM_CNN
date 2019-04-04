@@ -52,8 +52,8 @@ def built_vocab_vector(filenames,voc_size = 10000):
     count_paris = counter.most_common(voc_size-1)
     word, _ = list(zip(*count_paris))
 
-    f = codecs.open('./data/vector_word.txt', 'r', encoding='utf-8')
-    vocab_word = open('./data/vocab_word.txt', 'w', encoding='utf-8')
+    f = codecs.open('../data/vector_word.txt', 'r', encoding='utf-8')
+    vocab_word = open('../data/vocab_word.txt', 'w', encoding='utf-8')
     for ealine in f:
         item = ealine.split(' ')
         key = item[0]
@@ -62,7 +62,7 @@ def built_vocab_vector(filenames,voc_size = 10000):
             embeddings[j] = np.array(vec)
             vocab_word.write(key.strip('\r') + '\n')
             j += 1
-    np.savez_compressed('./data/vector_word.npz', embeddings=embeddings)
+    np.savez_compressed('../data/vector_word.npz', embeddings=embeddings)
 
 #建立词典
 def get_wordid(filename):
