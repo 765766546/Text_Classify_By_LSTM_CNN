@@ -10,8 +10,8 @@ from Lstm_Cnn import Lstm_CNN
 '''
 def train():
 
-    tensorboard_dir = './tensorboard/Lstm_CNN'
-    save_dir = './checkpoints/Lstm_CNN'
+    tensorboard_dir = '../tensorboard/Lstm_CNN'
+    save_dir = '../checkpoints/Lstm_CNN'
     if not os.path.exists(tensorboard_dir):
         os.makedirs(tensorboard_dir)
     if not os.path.exists(save_dir):
