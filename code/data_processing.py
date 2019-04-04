@@ -32,7 +32,7 @@ def built_vocab_vector(filenames,voc_size = 10000):
     建立词典，词典词向量,去停用词，取所有文本中前N个词，
 	然后保存。之前训练的词向量是个数据量很大集合。很多词，已经不需要了，只要这N个词的词向量
     '''
-    stopword = open('./data/stopwords.txt', 'r', encoding='utf-8')
+    stopword = open('../data/stopwords.txt', 'r', encoding='utf-8')
     stop = [key.strip(' \n') for key in stopword]
 
     all_data = []
