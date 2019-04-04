@@ -5,7 +5,7 @@ from data_processing import read_category, get_wordid, get_word2vec, process, ba
 from Lstm_Cnn import Lstm_CNN
 
 '''
-模型迭代次数为5，每完成一轮迭代，模型保存一次。
+模型迭代次数为3，每完成一轮迭代，模型保存一次。
 当global_step为100的整数倍时，输出模型的训练结果以及在测试集上的测试结果。
 '''
 def train():
